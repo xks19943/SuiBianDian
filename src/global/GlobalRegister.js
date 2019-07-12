@@ -1,5 +1,5 @@
 
-var {$http, $log, $ui, LSN, $cookie, $store, $filter} = require('../services');
+var {$http, $log, $ui, LSN, $cookie, $store, $filter, DesignConvert} = require('../services');
 var { $config } = require('../settings');
 var {URL, COLOR, STYLE, FONTSIZE, ScreenWidth, ScreenHeight, GlobalPixelRatio, IsIOS} = require('../constants');
 
@@ -10,6 +10,7 @@ global.$log = $log;
 global.$cookie = $cookie;
 global.$store = $store;
 global.$filter = $filter;
+global.DesignConvert = DesignConvert;
 
 // broadcast center 注册全局时间中心
 global.LSN = LSN;

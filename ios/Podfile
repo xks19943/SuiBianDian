@@ -28,6 +28,27 @@ target 'SuiBianDian' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
+  pod 'RNDeviceInfo', :path => '../node_modules/react-native-device-info'
+
+  pod 'RNCAsyncStorage', :path => '../node_modules/@react-native-community/async-storage'
+
+  pod 'react-native-camera', :path => '../node_modules/react-native-camera'
+
+  pod 'RNFS', :path => '../node_modules/react-native-fs'
+
+  pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
+
+  pod 'react-native-image-picker', :path => '../node_modules/react-native-image-picker'
+
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
+  pod 'RNViewShot', :path => '../node_modules/react-native-view-shot'
+
+  pod 'react-native-webview', :path => '../node_modules/react-native-webview'
+
+
+  pod 'lottie-react-native', :path => '../node_modules/lottie-react-native'
+
   target 'SuiBianDianTests' do
     inherit! :search_paths
     # Pods for testing
