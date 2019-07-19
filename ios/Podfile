@@ -49,6 +49,8 @@ target 'SuiBianDian' do
 
   pod 'lottie-react-native', :path => '../node_modules/lottie-react-native'
 
+  pod 'RCTWeChat', :path => '../node_modules/react-native-wechat/ios'
+
   target 'SuiBianDianTests' do
     inherit! :search_paths
     # Pods for testing
