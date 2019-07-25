@@ -51,6 +51,12 @@ target 'SuiBianDian' do
 
   pod 'RCTWeChat', :path => '../node_modules/react-native-wechat/ios'
 
+  pod 'ReactNativePermissions', :path => '../node_modules/react-native-permissions'
+
+  pod 'react-native-amap3d', path: '../node_modules/react-native-amap3d/lib/ios'
+
+  pod 'react-native-amap-geolocation', :path => '../node_modules/react-native-amap-geolocation/lib/ios'
+
   target 'SuiBianDianTests' do
     inherit! :search_paths
     # Pods for testing

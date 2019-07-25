@@ -20,6 +20,8 @@
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* SuiBianDianTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* SuiBianDianTests.m */; };
 		37CEFB00E6308FBDAF62B4E9 /* libPods-SuiBianDian.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B50B12A8AA7E240C8B593F8 /* libPods-SuiBianDian.a */; };
+		3A995D0322E8623C00FDE1E9 /* AMapFoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A995D0222E8623C00FDE1E9 /* AMapFoundationKit.framework */; };
+		3A995D0522E8625300FDE1E9 /* AMapLocationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A995D0422E8625300FDE1E9 /* AMapLocationKit.framework */; };
 		3AFFEECF22D87B3A00E7A875 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3AFFEEBF22D87B3A00E7A875 /* Fontisto.ttf */; };
 		3AFFEED022D87B3A00E7A875 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3AFFEEC022D87B3A00E7A875 /* Octicons.ttf */; };
 		3AFFEED122D87B3A00E7A875 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3AFFEEC122D87B3A00E7A875 /* Feather.ttf */; };
@@ -90,6 +92,8 @@
 		2CBCBA5DBB044686B8AE6445 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* SuiBianDian-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SuiBianDian-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* SuiBianDian-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SuiBianDian-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A995D0222E8623C00FDE1E9 /* AMapFoundationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapFoundationKit.framework; sourceTree = "<group>"; };
+		3A995D0422E8625300FDE1E9 /* AMapLocationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapLocationKit.framework; sourceTree = "<group>"; };
 		3AFFEEBF22D87B3A00E7A875 /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
 		3AFFEEC022D87B3A00E7A875 /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
 		3AFFEEC122D87B3A00E7A875 /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Feather.ttf; sourceTree = "<group>"; };
@@ -149,7 +153,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A995D0522E8625300FDE1E9 /* AMapLocationKit.framework in Frameworks */,
 				37CEFB00E6308FBDAF62B4E9 /* libPods-SuiBianDian.a in Frameworks */,
+				3A995D0322E8623C00FDE1E9 /* AMapFoundationKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +212,8 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3A995D0422E8625300FDE1E9 /* AMapLocationKit.framework */,
+				3A995D0222E8623C00FDE1E9 /* AMapFoundationKit.framework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				6B50B12A8AA7E240C8B593F8 /* libPods-SuiBianDian.a */,
@@ -638,6 +646,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SuiBianDian/Pods-SuiBianDian-resources.sh",
+				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
@@ -659,6 +668,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
@@ -838,6 +848,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SuiBianDian/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -883,7 +897,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.suibiandian;
 				PRODUCT_NAME = SuiBianDian;
 				SWIFT_OBJC_BRIDGING_HEADER = "SuiBianDian-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -899,6 +913,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SuiBianDian/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -944,7 +962,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.suibiandian;
 				PRODUCT_NAME = SuiBianDian;
 				SWIFT_OBJC_BRIDGING_HEADER = "SuiBianDian-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

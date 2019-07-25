@@ -245,6 +245,19 @@ class Http {
     return this.fetchData(url, options);
   };
 
+
+  postQuery(url, data, params, options) {
+    options = options ? options : {};
+    options.method = 'POST';
+    options.body = data;
+    if (params) {
+      var getParams = $httpHelper.paramify(params);
+      url += `?${getParams}`;
+    }
+    return this.fetchData(url, options);
+  };
+
+
   postForm(url, data, options) {
     options = options || {};
     options.method = 'POST';
