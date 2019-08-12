@@ -5,6 +5,7 @@ PODS:
   - AMapLocation (2.6.2):
     - AMapFoundation (~> 1.4)
   - boost-for-react-native (1.63.0)
+  - Bugly (2.5.0)
   - DoubleConversion (1.1.6)
   - Folly (2018.10.22.00):
     - boost-for-react-native
@@ -112,6 +113,8 @@ PODS:
     - React-fishhook (= 0.60.3)
   - ReactNativePermissions (1.2.0):
     - React
+  - RNBugly (1.0.0):
+    - Bugly
   - RNCAsyncStorage (1.5.1):
     - React
   - RNDeviceInfo (2.2.0):
@@ -156,6 +159,7 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - React-RCTWebSocket (from `../node_modules/react-native/Libraries/WebSocket`)
   - ReactNativePermissions (from `../node_modules/react-native-permissions`)
+  - RNBugly (from `../node_modules/react-native-bugly`)
   - "RNCAsyncStorage (from `../node_modules/@react-native-community/async-storage`)"
   - RNDeviceInfo (from `../node_modules/react-native-device-info`)
   - RNFS (from `../node_modules/react-native-fs`)
@@ -170,6 +174,7 @@ SPEC REPOS:
     - AMapFoundation
     - AMapLocation
     - boost-for-react-native
+    - Bugly
     - lottie-ios
 
 EXTERNAL SOURCES:
@@ -231,6 +236,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/Libraries/WebSocket"
   ReactNativePermissions:
     :path: "../node_modules/react-native-permissions"
+  RNBugly:
+    :path: "../node_modules/react-native-bugly"
   RNCAsyncStorage:
     :path: "../node_modules/@react-native-community/async-storage"
   RNDeviceInfo:
@@ -251,6 +258,7 @@ SPEC CHECKSUMS:
   AMapFoundation: 216d58448c80356434ac4332250a8fdb2f5c4d1e
   AMapLocation: 89a7e4eb6040d32ba73c77a4966ecc66e46aa7c3
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
+  Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
   DoubleConversion: 5805e889d232975c086db112ece9ed034df7a0b2
   Folly: 30e7936e1c45c08d884aa59369ed951a8e68cf51
   glog: 1f3da668190260b06b429bb211bfbee5cd790c28
@@ -281,6 +289,7 @@ SPEC CHECKSUMS:
   React-RCTVibration: 5d9ed4a968e9d42880ddcc7c29bee3417c745408
   React-RCTWebSocket: 69d8565d66043f244b4129f3d7154c5689fb7d3e
   ReactNativePermissions: f3beb8871251594a8ea2c6b19a3f8252d5c7379d
+  RNBugly: 3835198f0c1f2c1a59270356391822c55882b05b
   RNCAsyncStorage: b63d6e83fc629b01df6b624688f17944cea5637f
   RNDeviceInfo: e2dd07dd0718ab34572cad16c4426fa90d45ebb5
   RNFS: c9bbde46b0d59619f8e7b735991c60e0f73d22c1
@@ -289,6 +298,6 @@ SPEC CHECKSUMS:
   RNViewShot: 05672e0b3c36cd70633466614b4451869a70c6c7
   yoga: 843fe25849b56131275bf3e5da2c468e96f68aff
 
-PODFILE CHECKSUM: 30e405856c386108ace5aba7018e12e3c926e267
+PODFILE CHECKSUM: e70b13d6695792e7be6f38633268617e4a2f1259
 
 COCOAPODS: 1.6.1

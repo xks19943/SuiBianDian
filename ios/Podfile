@@ -57,6 +57,9 @@ target 'SuiBianDian' do
 
   pod 'react-native-amap-geolocation', :path => '../node_modules/react-native-amap-geolocation/lib/ios'
 
+
+  pod 'RNBugly', :path => '../node_modules/react-native-bugly'
+
   target 'SuiBianDianTests' do
     inherit! :search_paths
     # Pods for testing

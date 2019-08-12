@@ -1,4 +1,4 @@
-package com.liaoye.appsetting;
+package com.yoorstore.appsetting;
 
 import android.content.Intent;
 import android.net.Uri;
