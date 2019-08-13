@@ -11,6 +11,7 @@ import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.soloader.SoLoader;
 import com.tencent.bugly.Bugly;
+import com.tencent.bugly.beta.Beta;
 import com.yoorstore.appsetting.AppSettingsPackage;
 
 import java.util.List;
@@ -47,6 +48,10 @@ public class MainApplication extends Application implements ReactApplication {
   public void onCreate() {
     super.onCreate();
     SoLoader.init(this, /* native exopackage */ false);
+    Beta.autoInit = true;
+    Beta.autoCheckUpgrade = true;
+    Beta.initDelay = 5 * 1000;
+    Beta.upgradeCheckPeriod = 60 * 1000;
     Bugly.init(this,"94f5edbbf0", BuildConfig.DEBUG);
   }
 
