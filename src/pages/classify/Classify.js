@@ -7,15 +7,34 @@ import React, {Component} from 'react';
 import {
   View,
   Text,
-  StyleSheet
+  StyleSheet,
+  SafeAreaView
 } from 'react-native';
 
+import HeaderView from '../../component/HeaderView';
+
 export default class Classify extends Component {
+
+  constructor(props){
+    super(props);
+    this.state = {
+
+    }
+  }
+
+  componentDidMount() {
+
+  }
+
   render() {
     return (
-      <View style={STYLE.BACKGROUND}>
-        <Text>Classify</Text>
-      </View>
+      <SafeAreaView style={STYLE.ROOT}>
+        <HeaderView
+          headerTitle={'分类'}/>
+        <View style={STYLE.BACKGROUND}>
+
+        </View>
+      </SafeAreaView>
     )
   }
 }

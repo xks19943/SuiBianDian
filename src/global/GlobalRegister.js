@@ -40,6 +40,9 @@ global.audienceId = '1022443232520601600';
 global.zoneId = 2017;
 global.areaId = 1013;
 global.regionId = 2000;
+global.wxAppOpenId = 'oFMMR0cCrNDzmDAloWljX7fWJUdo';
+
+
 
 
 
