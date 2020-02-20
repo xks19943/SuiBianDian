@@ -17,7 +17,7 @@ import Bg from '../../resource/icon/bg.png';
 export default class Splash extends Component {
 	componentDidMount() {
 		this.timer = setTimeout(()=>{
-			this.props.navigation && this.props.navigation.navigate('AuthStack');
+			this.props.navigation && this.props.navigation.navigate('AppStack');
 		},1000);
 	}
 

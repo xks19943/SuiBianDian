@@ -81,9 +81,9 @@ class Shop extends Component {
 	render() {
 		return (
 			<SafeAreaView style={STYLE.ROOT}>
+        <HeaderView
+          headerTitle={'商城'}/>
 				<View style={STYLE.BACKGROUND}>
-					<HeaderView
-						headerTitle={'商城'}/>
 					<Text>{'当前位置：' + this.state.currentLocation}</Text>
 					<TouchableOpacity
             onPress={()=>{
