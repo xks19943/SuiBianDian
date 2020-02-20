@@ -19,7 +19,7 @@ import AppStack from './AppStack';
 const AppNavigator = createSwitchNavigator({
 	Splash: {screen: Splash},
 	AuthStack: {screen: AuthStack},
-  AppStack: {screen: AppStack}
+  	AppStack: {screen: AppStack}
 },{
 	initialRouteName: 'Splash',
 });

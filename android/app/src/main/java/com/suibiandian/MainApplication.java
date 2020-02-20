@@ -16,6 +16,10 @@ import com.yoorstore.appsetting.AppSettingsPackage;
 
 import java.util.List;
 
+import javax.annotation.Nullable;
+
+import cn.reactnative.modules.update.UpdateContext;
+
 public class MainApplication extends Application implements ReactApplication {
 
   private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
@@ -36,6 +40,12 @@ public class MainApplication extends Application implements ReactApplication {
     @Override
     protected String getJSMainModuleName() {
       return "index";
+    }
+
+    @Nullable
+    @Override
+    protected String getJSBundleFile() {
+      return UpdateContext.getBundleUrl(MainApplication.this);
     }
   };
 
