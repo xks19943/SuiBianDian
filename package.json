@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.5.1",
-    "lodash": "^4.17.14",
+    "lodash": "^4.17.19",
     "lottie-react-native": "^3.0.1",
     "moment": "^2.24.0",
     "prop-types": "^15.7.2",
